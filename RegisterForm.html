@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<img src="./images/logo.jpg" alt="Logo" width="70" height="60" >  </img>
+</head>
+<body>  
+<h2>Appication For Graduation</h2>
+ 
+<table align="center" cellpadding = "10">
+ <form id="myForm">
+<td>FIRST NAME</td>
+<td><input type="text" name="First_Name">
+</td>
+
+ 
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="Last_Name">
+</td>
+</tr>
+ 
+<tr>
+<td>DATE OF BIRTH</td>
+ 
+<td>
+<select name="Birthday_day" id="Birthday_Day">
+<option value="-1">Day:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+ 
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+
+</select>
+ 
+<select id="Birthday_Month" name="Birthday_Month">
+<option value="-1">Month:</option>
+<option value="Jan">Jan</option>
+<option value="Feb">Feb</option>
+<option value="Mar">Mar</option>
+<option value="Apr">Apr</option>
+<option value="May">May</option>
+<option value="Jun">Jun</option>
+<option value="Jul">Jul</option>
+<option value="Aug">Aug</option>
+<option value="Sep">Sep</option>
+<option value="Oct">Oct</option>
+<option value="Nov">Nov</option>
+<option value="Dec">Dec</option>
+</select>
+ 
+<select name="Birthday_Year" id="Birthday_Year">
+ 
+<option value="-1">Year:</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+
+</select>
+</td>
+</tr>
+ 
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="Email_Id"></td>
+</tr>
+
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="Mobile_Number">
+</td>
+</tr>
+ 
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+ 
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="20"></textarea></td>
+</tr>
+ 
+<tr>
+<td>CITY</td>
+<td><input type="text" name="City">
+</td>
+</tr>
+ 
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code">
+</td>
+</tr>
+ 
+<tr>
+<td>STATE</td>
+<td><input type="text" name="State">
+</td>
+</tr>
+ 
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="Country"></td>
+</tr>
+ 
+ 
+<tr>
+<td>HOBBIES <br /><br /><br /></td>
+ 
+<td>
+PUBG
+<input type="checkbox" name="Hobby_PUBG" value="PUBG" />
+Singing
+<input type="checkbox" name="Hobby_Singing" value="Singing" />
+Dancing
+<input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+Cooking
+<input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+</td>
+</tr>
+ 
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board"></td>
+<td><input type="text" name="ClassX_Percentage"></td>
+<td><input type="text" name="ClassX_YrOfPassing"></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board"></td>
+<td><input type="text" name="ClassXII_Percentage"></td>
+<td><input type="text" name="ClassXII_YrOfPassing"></td>
+</tr>
+  
+<tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+ 
+<tr>
+<td>COURSES<br /></td>
+<td>
+B.Tech
+<input type="radio" name="Course_B.Tech" value="B.Tech"/>
+B.Arch
+<input type="radio" name="Course_B.Arch" value="B.Arch"/>
+B.Tech + M.Tech
+<input type="radio" name="Course_B.Tech+M.Tech" value="B.Tech+M.Tech"/>
+B.Sc
+<input type="radio" name="Course_B.Sc" value="B.Sc"/>
+</td>
+</tr>
+ 
+<tr>
+<td colspan="2" align="center">
+<input type="button" onclick="Submit()" value="Submit form">
+<input type="button" onclick="Reset()" value="Reset">
+</td>
+</tr>
+</table>
+<script>
+function Submit()    
+{                   
+  alert('Submitted Successfully');         
+ }  
+</script>
+ 
+</form>
+ 
+</body>
+</html>
